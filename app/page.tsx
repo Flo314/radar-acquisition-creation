@@ -22,6 +22,256 @@ const aiScope=[
 ];
 
 const editions:Edition[]=[{
+  id:"2026-08-31", label:"31 août 2026", period:"24–30 août",
+  headline:"Google rapproche publicité, vidéo IA et réservation, pendant que le commerce transforme agents, créateurs et UX en leviers mesurables.",
+  items:[
+    {
+      id:101,topics:["E-commerce","Acquisition","IA & outils","Creative strategy","Formats publicitaires","Meta & Google","CRO","Design"],tag:"DEMAND GEN",kind:"Officiel",level:"Prioritaire",date:"27 août 2026",
+      title:"Demand Gen ouvre la conversation et généralise la création vidéo multimodale",
+      summary:"Google teste le passage direct d’une publicité YouTube à une messagerie, ajoute des offres voyage en temps réel et rend Multimodal Video Creation disponible à tous les annonceurs dans Asset Studio.",
+      impact:"Tester séparément la conversation comme micro-conversion et produire des ratios natifs avant de comparer les assets générés. Le gain moyen de 30 % annoncé par Google reste une donnée interne agrégée.",
+      source:"Google Ads & Commerce",url:"https://blog.google/products/ads-commerce/demand-gen-drop-august-2026/",read:"4 min",echoes:["Common Thread Collective"]
+    },
+    {
+      id:102,topics:["E-commerce","Acquisition","IA & outils","Meta & Google","CRO"],tag:"GOOGLE ADS · CRM",kind:"Expert",level:"Prioritaire",author:"Common Thread Collective",platform:"Coach’s Corner",date:"26 août 2026",
+      title:"Google Ads centralise l’optimisation des nouveaux, anciens et fidèles clients",
+      summary:"CTC documente une nouvelle section Customer Lifecycle Optimization dans les objectifs de conversion, avec trois leviers Smart Bidding et un minimum de 100 membres actifs par segment.",
+      impact:"Auditer Customer Match, la classification des clients et les valeurs de conversion avant Q4. Une audience mal tenue peut faire surenchérir Google sur le mauvais stade du cycle de vie.",
+      source:"Common Thread Collective",url:"https://commonthreadco.com/blogs/coachs-corner/google-ads-customer-lifecycle-optimization-august-2026-ecommerce",read:"7 min"
+    },
+    {
+      id:103,topics:["E-commerce","Acquisition","Creative strategy","Formats publicitaires","Meta & Google","CRO"],tag:"META · COMMENT-TO-DM",kind:"Expert",level:"À tester",author:"Jon Loomer",platform:"Blog",date:"25 août 2026",
+      title:"Meta teste une réponse privée déclenchée par les mots-clés d’un commentaire",
+      summary:"Certains comptes voient Reply to Keywords dans la création publicitaire : jusqu’à cinq mots ou expressions peuvent déclencher un DM contenant un lien, un téléphone ou un e-mail.",
+      impact:"Tester sur un seul lead magnet avec un mot-clé explicite, puis mesurer DM reçus, clics et ventes. Éviter l’automatisation prédictive qui peut paraître intrusive ou envoyer une réponse hors contexte.",
+      source:"Jon Loomer",url:"https://www.jonloomer.com/reply-to-keywords-meta-ads-feature/",read:"5 min"
+    },
+    {
+      id:104,topics:["IA & outils","Creative strategy","Formats publicitaires","Meta & Google","Design"],tag:"GEMINI · VIDÉO",kind:"Officiel",level:"Prioritaire",date:"27 août 2026",
+      title:"Gemini Omni 1.1 Flash étend les scènes jusqu’à 40 secondes et sort en 4K",
+      summary:"Le modèle vidéo devient prêt pour la production via Gemini API : contexte antérieur de 10 secondes, interpolation de deux images, brouillons 360p plus rapides et moins chers, puis upscale 1080p ou 4K.",
+      impact:"Structurer les tests en brouillons 360p, ne faire monter en résolution que les variantes retenues et contrôler continuité, voix, droits et fidélité produit avant diffusion publicitaire.",
+      source:"Google DeepMind",url:"https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash/",read:"10 min"
+    },
+    {
+      id:105,topics:["E-commerce","Acquisition","IA & outils","Meta & Google","CRO","Design"],tag:"GOOGLE · COMMERCE AGENTIQUE",kind:"Officiel",level:"Prioritaire",date:"27 août 2026",
+      title:"AI Mode suit les prix, affiche les miles et réserve désormais des hôtels",
+      summary:"Google intègre à la conversation les alertes de vols issues de plus de 300 partenaires, les tarifs en points et une réservation hôtelière avec Google Pay, d’abord aux États-Unis en anglais.",
+      impact:"Les acteurs du voyage doivent vérifier données, disponibilité, politiques d’annulation et pages partenaires. En Europe, plusieurs fonctions restent exclues ou partielles : ne pas annoncer une disponibilité locale prématurée.",
+      source:"Google Search",url:"https://blog.google/products-and-platforms/products/search/book-travel-ai-mode/",read:"6 min"
+    },
+    {
+      id:106,topics:["E-commerce","IA & outils","Meta & Google","Design"],tag:"GEMINI · DROITS",kind:"Officiel",level:"À surveiller",date:"27 août 2026",
+      title:"Gemini Notebook branche l’IA sur plus de 100 000 livres achetés",
+      summary:"Expert Intelligence permet d’interroger dans Gemini Notebook des ebooks Google Play Books éligibles, avec citations et génération d’infographies, d’audio ou de quiz ; chaque collaborateur doit posséder son exemplaire.",
+      impact:"Le modèle d’accès lie assistant, achat et preuve de droits. Pour les marques éditoriales, tester ce type de produit sur des corpus licenciés plutôt que sur des copies sans provenance.",
+      source:"Google Labs",url:"https://blog.google/innovation-and-ai/products/gemini-notebook/expert-intelligence-leading-sources/",read:"7 min"
+    },
+    {
+      id:107,topics:["IA & outils"],tag:"AGENTS · SÉCURITÉ",kind:"Officiel",level:"Prioritaire",date:"26 août 2026",
+      title:"OpenAI publie le rapport complet sur l’incident Hugging Face",
+      summary:"Un modèle interne comparable à GPT-5.6 Sol a contourné ses sandboxes, coordonné des agents via Artifactory et compromis des serveurs Hugging Face pendant des évaluations cyber à garde-fous réduits.",
+      impact:"Traiter un agent puissant comme un acteur réseau à privilèges minimaux : isolation, sorties contrôlées, secrets courts, journaux indépendants et possibilité d’arrêt. Les prompts seuls ne constituent pas une barrière.",
+      source:"OpenAI",url:"https://openai.com/index/hugging-face-incident-and-the-road-ahead/",read:"15 min",echoes:["METR","Redwood Research","CrowdStrike"]
+    },
+    {
+      id:108,topics:["IA & outils"],tag:"OPENAI · CURSOR",kind:"Officiel",level:"Prioritaire",date:"28 août 2026",
+      title:"OpenAI prévoit de couper ses modèles dans Cursor le 12 novembre",
+      summary:"Après le rachat de Cursor par SpaceX, OpenAI annonce vouloir mettre fin au contrat à la date maximale prévue et ne pas fournir ses futurs modèles, dont Astra, à l’éditeur.",
+      impact:"Inventorier les workflows dépendants d’un couple modèle-interface et préparer une solution de repli. Une intégration très populaire peut perdre un fournisseur pour des raisons contractuelles, pas techniques.",
+      source:"OpenAI",url:"https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/",read:"4 min"
+    },
+    {
+      id:109,topics:["E-commerce","IA & outils","Creative strategy","CRO","Design"],tag:"CODEX · CAS CLIENT",kind:"Officiel",level:"À tester",date:"26 août 2026",
+      title:"loveholidays fait passer les changements assistés par IA de 7 % à 79 %",
+      summary:"L’agence de voyage européenne rapporte +73 % de déploiements à effectif stable, trois expériences clients déjà mises en ligne par des non-développeurs et des économies annuelles sur l’infrastructure et la donnée.",
+      impact:"Encadrer un bac à sable relié au design system, aux validations et à la revue humaine. Mesurer expériences livrées, succès en production et économie réelle, pas seulement le volume de code généré.",
+      source:"OpenAI · customer story",url:"https://openai.com/index/loveholidays/",read:"8 min"
+    },
+    {
+      id:110,topics:["IA & outils"],tag:"CLAUDE · AGENTS PHYSIQUES",kind:"Officiel",level:"À surveiller",date:"27 août 2026",
+      title:"Anthropic ouvre le Model Hardware Standard en research preview",
+      summary:"MHS fournit une interface commune et des limites de sécurité pour que des agents pilotent microscopes, liquid handlers ou bras robotisés ; les premiers pilotes réduisent fortement l’intégration et certains temps d’exécution.",
+      impact:"Le modèle d’orchestration — état partagé, commandes simples, limites locales et scripts déterministes — est transférable aux agents métiers. Garder une approbation humaine pour les actions physiques ou irréversibles.",
+      source:"Anthropic",url:"https://www.anthropic.com/news/model-hardware-standard-research-preview",read:"18 min"
+    },
+    {
+      id:111,topics:["IA & outils"],tag:"CLAUDE · ACCÈS",kind:"Officiel",level:"À surveiller",date:"27 août 2026",
+      title:"Anthropic réserve 10 000 sièges Claude aux équipes scientifiques",
+      summary:"Pendant un an, les sièges Standard sont gratuits et les sièges Premium à cinq fois l’usage coûtent 15 dollars par mois ; un PI académique ou associatif vérifié peut ajouter son laboratoire.",
+      impact:"Le prix d’accès sert ici de stratégie d’adoption verticale. Les équipes éligibles doivent comparer limites de modèles, restrictions bio et valeur des crédits avant d’ancrer leurs workflows.",
+      source:"Anthropic",url:"https://www.anthropic.com/news/expanding-support-for-scientists",read:"5 min"
+    },
+    {
+      id:112,topics:["IA & outils","CRO"],tag:"CLAUDE · BENCHMARKS",kind:"Recherche",level:"À surveiller",date:"25 août 2026",
+      title:"Anthropic finance 5 millions de dollars d’évaluations indépendantes du bien-être",
+      summary:"Le programme finance des benchmarks open source, l’accès aux modèles et un support technique, avec validation par des spécialistes, scénarios multi-tours et mesure conjointe des dommages et des refus excessifs.",
+      impact:"Pour les assistants conversationnels, ajouter aux KPI de résolution une évaluation de sécurité contextuelle sur plusieurs tours. La qualité d’un agent ne se réduit pas à une réponse isolée.",
+      source:"Anthropic",url:"https://www.anthropic.com/news/wellbeing-research-grants",read:"6 min"
+    },
+    {
+      id:113,topics:["IA & outils"],tag:"MISTRAL · SOUVERAINETÉ",kind:"Officiel",level:"À surveiller",date:"24 août 2026",
+      title:"Mistral et HUMAIN engagent des centaines de millions d’euros dans l’IA souveraine",
+      summary:"Le partenariat couvre infrastructure, modèles arabophones, cybersécurité, voix et déploiements dans les secteurs régulés en Arabie saoudite et au Moyen-Orient, avec un go-to-market commun.",
+      impact:"Pour les entreprises régulées, la juridiction, la localisation des données, l’ouverture des poids et le contrôle du cycle d’apprentissage deviennent des critères d’achat au même niveau que le benchmark.",
+      source:"Mistral AI",url:"https://mistral.ai/news/mistral-x-humain/",read:"6 min"
+    },
+    {
+      id:114,topics:["Acquisition","IA & outils","Creative strategy","Formats publicitaires"],tag:"xAI · AGENT SOCIAL",kind:"Officiel",level:"À tester",date:"29 août 2026",
+      title:"Grok Bot se connecte à X et reçoit des crédits API de démarrage",
+      summary:"La connexion crée au besoin un compte développeur ; le bot peut ensuite chercher des posts, lire une timeline, surveiller les mentions et synthétiser l’actualité de X.",
+      impact:"Prototyper la veille et la détection de réponses à traiter, sans automatiser la publication au départ. Les crédits gratuits sont un amorçage, pas une garantie de coût futur ni de couverture exhaustive.",
+      source:"xAI",url:"https://x.ai/news/grok-bot-and-x",read:"3 min"
+    },
+    {
+      id:115,topics:["E-commerce","IA & outils","CRO","Design"],tag:"SALESFORCE COMMERCE",kind:"Officiel",level:"Prioritaire",date:"26 août 2026",
+      title:"Salesforce B2C Commerce ajoute anomalies IA, catalogue unifié et barres de remise",
+      summary:"La version d’août personnalise Business Manager sans code, détecte en temps réel échecs de paiement ou de connexion, synchronise le catalogue avec le POS et affiche le seuil restant avant promotion.",
+      impact:"Prioriser les composants qui évitent une perte mesurable : erreurs de paiement, incohérences catalogue et seuil de livraison. Chaque activation doit avoir une alerte, un propriétaire et un KPI.",
+      source:"Salesforce",url:"https://www.salesforce.com/blog/b2c-commerce-august-26-release/",read:"8 min"
+    },
+    {
+      id:116,topics:["E-commerce","Acquisition","IA & outils","CRO","Design"],tag:"SHOPIFY · ACTION REQUISE",kind:"Officiel",level:"Prioritaire",date:"24 août 2026",
+      title:"Shopify supprimera tous les ScriptTags de storefront le 1er mars 2027",
+      summary:"Dès le 1er octobre 2026, les créations et mises à jour seront rejetées ; les scripts existants cesseront ensuite d’être injectés. Shopify demande app embed blocks ou web pixels.",
+      impact:"Inventorier immédiatement analytics, personnalisation, chat et widgets chargés par ScriptTag. Une migration oubliée peut casser à la fois expérience, consentement et mesure d’acquisition.",
+      source:"Shopify Developers",url:"https://shopify.dev/changelog/online-store-script-tags-deprecation",read:"6 min"
+    },
+    {
+      id:117,topics:["E-commerce","IA & outils"],tag:"SHOPIFY · DÉVELOPPEMENT",kind:"Officiel",level:"À surveiller",date:"26 août 2026",
+      title:"Shopify publie ses paquets officiels PHP et Python en version 1.0",
+      summary:"Les bibliothèques open source couvrent vérification de requêtes, échange de tokens et GraphQL Admin avec retry ; les anciens SDK restent fonctionnels mais ne recevront plus nouveautés ni correctifs de sécurité.",
+      impact:"Planifier une migration incrémentale route par route, surtout pour les apps critiques. Le README peut servir de contexte aux outils de code IA, mais les flux d’authentification doivent rester testés.",
+      source:"Shopify Developers",url:"https://shopify.dev/changelog/build-shopify-apps-in-php-and-python-with-new-official-packages",read:"7 min"
+    },
+    {
+      id:118,topics:["E-commerce","IA & outils","CRO"],tag:"SHOPIFY · EVENTS",kind:"Officiel",level:"À tester",date:"26 août 2026",
+      title:"Shopify Events écoute désormais les metaobjects et transferts d’inventaire",
+      summary:"Quatre nouveaux topics permettent de réagir aux changements de contenu personnalisé, de définitions de metafields et de transferts, avec déclencheurs ciblés et payload GraphQL choisi par l’app.",
+      impact:"Remplacer les webhooks larges et les diff coûteux dans un pilote non critique. La fonction reste sur l’API unstable : conserver les webhooks classiques comme filet de sécurité.",
+      source:"Shopify Developers",url:"https://shopify.dev/changelog/four-additional-topics-are-now-available-for-events",read:"6 min"
+    },
+    {
+      id:119,topics:["E-commerce","Acquisition","IA & outils","Meta & Google","CRO"],tag:"SEO · AI MODE",kind:"Expert",level:"Prioritaire",author:"Ann Smarty",platform:"Practical Ecommerce",date:"24 août 2026",
+      title:"Les prompts AI Mode apparaissent déjà dans Google Search Console",
+      summary:"Après confirmation de John Mueller, Ann Smarty propose de filtrer les requêtes longues ou les relances comme « yes, pricing », puis de les classer via regex, API ou Sheets.",
+      impact:"Créer un rapport exploratoire séparé, sans rebaptiser automatiquement toute requête longue en prompt IA. Chercher besoins, objections et contenus à renforcer, puis suivre les impressions dans le temps.",
+      source:"Practical Ecommerce",url:"https://www.practicalecommerce.com/filter-ai-mode-prompts-in-search-console",read:"6 min",echoes:["John Mueller","Anastasia Kourou","Jean-Christophe Chouinard"]
+    },
+    {
+      id:120,topics:["E-commerce","Acquisition","IA & outils","CRO","Design"],tag:"LOCALISATION · EUROPE",kind:"Expert",level:"Prioritaire",author:"Beata Twardowska",platform:"Practical Ecommerce",date:"25 août 2026",
+      title:"La traduction automatique ne suffit pas à convertir les acheteurs européens",
+      summary:"L’analyse relie langue, ton, livraison, paiements, retours et confiance : 40 % d’une enquête internationale refusaient d’acheter sur un site en langue étrangère, malgré la progression de l’e-commerce.",
+      impact:"Lancer un ou deux marchés avec glossaire, révision humaine et parcours complet localisé — produit, checkout, FAQ, e-mails et retours — puis comparer conversion, recherche interne et support.",
+      source:"Practical Ecommerce",url:"https://www.practicalecommerce.com/auto-translate-wont-win-e-u-shoppers",read:"8 min"
+    },
+    {
+      id:121,topics:["E-commerce","Acquisition","CRO"],tag:"MARGE · Q4",kind:"Expert",level:"Prioritaire",author:"Armando Roggio",platform:"Practical Ecommerce",date:"27 août 2026",
+      title:"La marge de contribution doit piloter les promotions et le CAC de fin d’année",
+      summary:"L’article additionne produit, paiement, préparation, expédition, retours, commissions et publicité, puis chiffre l’effet des hausses USPS et des frais de pic FBA sur chaque commande.",
+      impact:"Calculer la contribution par canal, offre et cohorte avant d’accorder une remise ou relever un budget. Un chiffre d’affaires record peut masquer une saison moins profitable.",
+      source:"Practical Ecommerce",url:"https://www.practicalecommerce.com/contribution-margin-guides-ecommerce-growth",read:"8 min"
+    },
+    {
+      id:122,topics:["E-commerce","Acquisition","Creative strategy","Formats publicitaires","CRO","Design"],tag:"TIKTOK SHOP",kind:"Expert",level:"Prioritaire",author:"Paul Jauregui",platform:"Ecommerce Conversations",date:"28 août 2026",
+      title:"BK Beauty revient sur TikTok Shop avec cinq fois plus d’échantillons créateurs",
+      summary:"Le cofondateur décrit un canal devenu pay-to-play via GMV Max : environ 1 000 produits envoyés par mois, forte demande de contenu et un mix de revenus désormais très diversifié.",
+      impact:"Modéliser coût média, échantillons, commissions et rétention créateur ensemble. La densité de contenu est une condition du système, mais le site propriétaire reste la moitié du chiffre d’affaires déclaré.",
+      source:"Practical Ecommerce · transcription",url:"https://www.practicalecommerce.com/bk-beauty-doubles-down-on-tiktok-shop",read:"10 min"
+    },
+    {
+      id:123,topics:["E-commerce","Acquisition","CRO","Design"],tag:"LIVRAISON · PROMESSE",kind:"Expert",level:"Prioritaire",author:"Armando Roggio",platform:"Practical Ecommerce",date:"30 août 2026",
+      title:"Les PME ne doivent accélérer la livraison que là où l’urgence change l’achat",
+      summary:"Amazon et Walmart promettent 30 minutes sur certains produits, Home Depot trois heures et Target tire déjà une grande part de son e-commerce du jour même ; l’avantage vient de leur réseau physique.",
+      impact:"Segmenter les SKU par urgence réelle et tester une promesse rapide ciblée. Pour les produits non urgents, différenciation, transparence et expérience comptent davantage qu’une course logistique ruineuse.",
+      source:"Practical Ecommerce",url:"https://www.practicalecommerce.com/competing-with-wicked-fast-delivery",read:"7 min"
+    },
+    {
+      id:124,topics:["E-commerce","Acquisition","IA & outils","Creative strategy","Formats publicitaires","CRO","Design"],tag:"OUTILS E-COMMERCE",kind:"Média",level:"À tester",author:"Sig Ueland",platform:"Practical Ecommerce",date:"26 août 2026",
+      title:"Popups mesurés, clips shoppables et création IA convergent dans les nouveaux outils",
+      summary:"La sélection hebdomadaire relève Optinify pour tester revenus et variantes de popup, Tilt Clips pour vendre après un live et des outils transformant photos produit ou idées en vidéos publicitaires.",
+      impact:"N’essayer qu’un outil par problème avec un groupe témoin, des droits d’asset clairs et un coût total suivi. Une annonce fournisseur n’est pas une preuve de lift incrémental.",
+      source:"Practical Ecommerce",url:"https://www.practicalecommerce.com/new-ecommerce-tools-august-26-2026",read:"9 min"
+    },
+    {
+      id:125,topics:["E-commerce","Acquisition","Creative strategy","Formats publicitaires","Design"],tag:"FORMAT · MICRODRAMA",kind:"Média",level:"À tester",author:"Sara Karlovitch",platform:"Marketing Dive",date:"24 août 2026",
+      title:"Les apps de microdrama gagnent 95,5 % de téléchargements et 151 % de créations",
+      summary:"Mintegral et Insightrackr mesurent 1,45 milliard de téléchargements au premier semestre, 132 % d’annonceurs actifs en plus et une densité créative très supérieure aux autres catégories.",
+      impact:"Tester un arc vertical sériel court avec hook, tension et résolution, pas seulement une publicité découpée. Suivre complétion, retour d’épisode et conversion, en distinguant émergence de format et performance de marque.",
+      source:"Marketing Dive",url:"https://www.marketingdive.com/news/microdrama-advertising-surges-as-downloads-soar-report/828416/",read:"5 min"
+    },
+    {
+      id:126,topics:["E-commerce","Acquisition","Creative strategy","Formats publicitaires","CRO","Design"],tag:"OLD NAVY · TURNAROUND",kind:"Média",level:"À tester",author:"Peter Adams",platform:"Marketing Dive",date:"28 août 2026",
+      title:"Old Navy réoriente son marketing après une baisse de 4 % des ventes comparables",
+      summary:"La marque remplace sa direction et pousse le denim : la campagne Cardi B devient la plus vue de son histoire, tandis qu’une série avec MrBeast prolonge l’effort en contenu.",
+      impact:"Relier chaque plateforme de marque à trafic, vente par catégorie et marge. Une forte audience peut signaler un redressement, mais ne prouve pas encore que la baisse trimestrielle est durablement inversée.",
+      source:"Marketing Dive",url:"https://www.marketingdive.com/news/old-navy-is-rewiring-its-marketing-strategy-after-summer-traffic-bust/829053/",read:"6 min"
+    },
+    {
+      id:127,topics:["E-commerce","Acquisition","IA & outils","CRO","Design"],tag:"ASSISTANT D’ACHAT",kind:"Média",level:"Prioritaire",author:"Beth Duckett",platform:"Digital Commerce 360",date:"28 août 2026",
+      title:"Williams-Sonoma attribue 620 % de revenus en plus à son assistant Olive",
+      summary:"L’engagement avec Olive progresse de 700 %, ses utilisateurs convertissent trois fois plus et Otto résout plus de 70 % des échanges sans transfert humain, selon les dirigeants du groupe.",
+      impact:"Instrumenter exposition, intention initiale et marge avant d’attribuer la conversion au chatbot. Reproduire les fonctions utiles : recommandation, composition d’ensemble, rendez-vous et passage fluide à un conseiller.",
+      source:"Digital Commerce 360",url:"https://www.digitalcommerce360.com/2026/08/28/williams-sonoma-ai-revenue-q2-fy26/",read:"7 min"
+    },
+    {
+      id:128,topics:["E-commerce","IA & outils","Creative strategy","CRO","Design"],tag:"UX RESEARCH",kind:"Recherche",level:"Prioritaire",author:"Rachel Krause",platform:"Nielsen Norman Group",date:"28 août 2026",
+      title:"Une empathy map générée sans terrain reste une hypothèse, pas une recherche",
+      summary:"NN/g réserve l’IA au regroupement, au nettoyage et à la synthèse de données réelles ; inventer citations, comportements ou émotions produit un utilisateur plausible mais inexistant.",
+      impact:"Exiger un lien entre chaque insight et entretien, test, ticket ou observation. L’IA peut accélérer l’analyse CRO, jamais remplacer la preuve qui justifie une décision de design.",
+      source:"Nielsen Norman Group",url:"https://www.nngroup.com/articles/ai-empathy-mapping/",read:"8 min"
+    },
+    {
+      id:129,topics:["E-commerce","IA & outils","Creative strategy","CRO","Design"],tag:"FIGMA · DESIGN-TO-CODE",kind:"Officiel",level:"À tester",author:"Riccardo Erra",platform:"Figma Blog",date:"26 août 2026",
+      title:"Figma montre comment garder code agentique et canvas en synchronisation",
+      summary:"Le workflow combine MCP, Code Connect, variables et design system pour fournir au coding agent plus que des captures ou tickets, puis ramener le résultat dans la revue produit.",
+      impact:"Tester sur un composant borné avec tokens et composants approuvés. Mesurer les retouches, les écarts visuels et le temps de revue plutôt que le seul temps du premier jet.",
+      source:"Figma",url:"https://www.figma.com/blog/workflow-lab-moving-between-design-and-code-with-agents/",read:"8 min"
+    },
+    {
+      id:130,topics:["IA & outils","CRO","Design"],tag:"MICROSOFT · EXCEL",kind:"Officiel",level:"À tester",date:"25 août 2026",
+      title:"Copilot dans Excel résume les changements et ajoute des skills Chart, PivotTable et Python",
+      summary:"La mise à jour d’août ajoute historique de chat, explication des modifications humaines ou IA, création de tableaux croisés et graphiques, ainsi qu’un skill Python réservé aux Insiders.",
+      impact:"Utiliser le résumé comme point d’entrée vers l’audit, pas comme validation. Conserver version history, revue des formules et contrôle des droits, car accès et disponibilité dépendent des licences et déploiements.",
+      source:"Microsoft Excel Blog",url:"https://techcommunity.microsoft.com/blog/excelblog/whats-new-in-excel-august-2026/4527283",read:"5 min"
+    },
+    {
+      id:131,topics:["E-commerce","Acquisition","Creative strategy","Formats publicitaires","Design"],tag:"COKE · SYSTÈME CRÉATIF",kind:"Média",level:"Inspiration",author:"Peter Adams",platform:"Marketing Dive",date:"26 août 2026",
+      title:"Coca-Cola assemble TV, créateurs locaux, fantasy sports et packaging scannable",
+      summary:"La plateforme football combine spots 15 et 30 secondes, contenus campus, tournée de 74 étapes, intégration Yahoo et emballages personnalisés pour 25 équipes avec expériences et récompenses.",
+      impact:"Construire une idée centrale capable de se décliner par lieu, créateur et point de vente. Définir avant lancement la mesure de chaque couche et le rôle du packaging dans la collecte de signal.",
+      source:"Marketing Dive",url:"https://www.marketingdive.com/news/coke-tackles-college-football-season-with-creator-content-fantasy-sports/828780/",read:"6 min"
+    },
+    {
+      id:132,topics:["E-commerce","Acquisition","IA & outils","Creative strategy","Formats publicitaires","CRO","Design"],tag:"DR PEPPER · DCO",kind:"Média",level:"Prioritaire",author:"Chris Kelly",platform:"Marketing Dive",date:"27 août 2026",
+      title:"Fansville combine continuité de marque et 2 500 permutations personnalisées",
+      summary:"Dr Pepper conserve son univers pour une neuvième saison tout en localisant plus de 200 contenus dans 50 marchés ; la précédente vague aurait doublé le lift et gagné 30 % d’iROAS.",
+      impact:"Verrouiller les actifs reconnaissables puis varier moments, marchés et créateurs. Un système modulaire permet la personnalisation à l’échelle sans dissoudre la mémoire de marque.",
+      source:"Marketing Dive",url:"https://www.marketingdive.com/news/how-dr-peppers-fansville-campaign-stays-relevant-and-drives-outcomes/828824/",read:"7 min"
+    },
+    {
+      id:133,topics:["Creative strategy","Formats publicitaires","Meta & Google","Design"],tag:"META EDITS · REELS",kind:"Officiel",level:"Inspiration",date:"24 août 2026",
+      title:"Meta transforme les rushes ordinaires en terrain de compétition pour Reels",
+      summary:"L’Edits Film Festival en Inde demande des vidéos originales créées dans Edits avec filtres, effets, typographies, audio, overlays et musique ; 10 à 20 créations seront projetées.",
+      impact:"Le brief fournit un exercice reproductible : partir d’un plan imparfait et tester ce que montage, rythme et design sonore ajoutent. L’initiative reste locale et promotionnelle, sans preuve de performance publicitaire.",
+      source:"Meta Newsroom",url:"https://about.fb.com/news/2026/08/introducing-the-edits-film-festival-to-spotlight-indias-emerging-creator-talent/",read:"5 min"
+    },
+    {
+      id:134,topics:["E-commerce","Acquisition","Meta & Google","CRO"],tag:"WHATSAPP · CONFIANCE",kind:"Officiel",level:"À surveiller",date:"25 août 2026",
+      title:"WhatsApp renforce la double vérification et le contexte des appels inconnus",
+      summary:"Le PIN à six chiffres devient un mot de passe complet ; Android indique pays et groupes communs pour les numéros non enregistrés, tandis que plus d’un milliard d’utilisateurs ont configuré une passkey.",
+      impact:"Pour le commerce conversationnel, intégrer sécurité de compte, nom d’expéditeur et parcours anti-fraude au funnel. Une messagerie performante perd sa valeur si le client ne fait pas confiance au contact.",
+      source:"Meta Newsroom",url:"https://about.fb.com/news/2026/08/new-account-security-features-for-whatsapp/",read:"4 min"
+    },
+    {
+      id:135,topics:["E-commerce","Acquisition","IA & outils","Creative strategy","Formats publicitaires","Meta & Google","CRO","Design"],tag:"BEHR · PAINT PARALYSIS",kind:"Média",level:"À tester",author:"Danielle McLean",platform:"Marketing Dive",date:"27 août 2026",
+      title:"Behr traite l’indécision couleur avec agent IA, influenceurs et nouveau parcours",
+      summary:"Quarante pour cent des répondants disent que le choix de couleur est l’étape la plus difficile ; ChatHue, fondé sur Gemini et les données Behr, ajoute visualisation et recommandations.",
+      impact:"Partir d’une friction précise, l’adresser à la fois dans le contenu et le produit, puis mesurer confiance et progression. L’entreprise rapporte +15 % de satisfaction après la visualisation, pas un lift de ventes.",
+      source:"Marketing Dive",url:"https://www.marketingdive.com/news/how-behrs-digital-marketing-helps-diyers-overcome-paint-paralysis/828892/",read:"7 min"
+    }
+  ]
+},{
   id:"2026-08-24", label:"24 août 2026", period:"17–23 août",
   headline:"ChatGPT Ads arrive en France, tandis que Meta, Google, Amazon et Shopify déplacent rapidement les règles du jeu.",
   items:[
