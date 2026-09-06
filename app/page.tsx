@@ -22,6 +22,256 @@ const aiScope=[
 ];
 
 const editions:Edition[]=[{
+  id:"2026-09-07", label:"7 septembre 2026", period:"31 août–6 septembre",
+  headline:"ChatGPT Ads s’ouvre à l’Europe, Astra et Claude déplacent la frontière des agents, tandis que commerce et création renforcent mesure, continuité omnicanale et gouvernance.",
+  items:[
+    {
+      id:136,topics:["E-commerce","Acquisition","IA & outils","Creative strategy","Formats publicitaires","Meta & Google","CRO","Design"],tag:"CHATGPT ADS · EUROPE",kind:"Officiel",level:"Prioritaire",author:"OpenAI",platform:"OpenAI News",date:"31 août 2026",
+      title:"ChatGPT Ads ouvre son gestionnaire direct à l’Europe et structure son offre e-commerce",
+      summary:"OpenAI étend Ads Manager à l’Europe, l’Inde, le Moyen-Orient et l’Afrique du Nord, avec enchères CPC ou optimisées sur les résultats, Pixel, CAPI, flux produits et audiences personnalisées.",
+      impact:"Préparer flux marchand, événements serveur et protocole d’incrémentalité avant de tester. Les exemples à 3× le ROAS sont des cas OpenAI, pas un benchmark transférable.",
+      source:"OpenAI",url:"https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads/",read:"9 min",echoes:["Common Thread Collective · analyse e-commerce"]
+    },
+    {
+      id:137,topics:["IA & outils","CRO","Design"],tag:"OPENAI · GPT-6",kind:"Officiel",level:"Prioritaire",author:"OpenAI",platform:"OpenAI News",date:"3 septembre 2026",
+      title:"GPT-6 Astra arrive avec un million de tokens et des garde-fous cyber renforcés",
+      summary:"OpenAI lance Astra en accès organisationnel limité avant les offres ChatGPT, API, Azure et AWS, en revendiquant 98 % sur FrontierMath Tier 4 et 99,9 % sur ARC-AGI-3.",
+      impact:"Réserver les premiers pilotes aux tâches longues, vérifiables et réversibles. Les scores publiés par le fournisseur doivent être complétés par des évaluations métier internes.",
+      source:"OpenAI",url:"https://openai.com/index/gpt-6-astra/",read:"14 min",echoes:["OpenAI · The Path to Astra"]
+    },
+    {
+      id:138,topics:["IA & outils","CRO","Design"],tag:"OPENAI · SANTÉ",kind:"Officiel",level:"À surveiller",author:"OpenAI",platform:"OpenAI News",date:"1 septembre 2026",
+      title:"ChatGPT Healthcare relie dossiers Epic et neuf bases publiques avec citations",
+      summary:"L’espace Healthcare ajoute Epic EHR et un plugin de données publiques couvrant notamment ClinicalTrials.gov, PubMed, RxNorm et DailyMed, avec contrôles d’entreprise et éligibilité HIPAA.",
+      impact:"Retenir le modèle produit : données autorisées, citations et permissions distinctes. Ne pas extrapoler les résultats cliniques à un usage grand public ou à une décision autonome.",
+      source:"OpenAI",url:"https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources/",read:"11 min"
+    },
+    {
+      id:139,topics:["E-commerce","Acquisition","Meta & Google","CRO","Design"],tag:"LOCAL SEARCH",kind:"Média",level:"Prioritaire",author:"Sara Lebow",platform:"EMARKETER",date:"4 septembre 2026",
+      title:"Google démarre encore 52 % des recherches locales, mais n’en retient que 19 %",
+      summary:"Une enquête BrightLocal relayée par EMARKETER montre un parcours local fragmenté : Google domine le premier geste, puis cartes, annuaires, réseaux sociaux et assistants captent les recherches suivantes.",
+      impact:"Mesurer la découverte locale comme un parcours multi-surface : données établissement cohérentes, preuve sociale, pages locales et paramètres de campagne reliés au CRM.",
+      source:"EMARKETER",url:"https://www.emarketer.com/content/consumers-starting-local-searches-on-google--then-scattering",read:"5 min"
+    },
+    {
+      id:140,topics:["IA & outils","CRO","Design"],tag:"OPENAI · R&D",kind:"Recherche",level:"Prioritaire",author:"OpenAI Research",platform:"OpenAI News",date:"6 septembre 2026",
+      title:"OpenAI mesure 3,1 journées-agent par journée humaine dans ses équipes de recherche",
+      summary:"OpenAI décrit un stade d’assistant de recherche capable de tâches cadrées sur plusieurs jours, avec une consommation médiane supérieure à 600 dollars d’inférence par chercheur et par jour mi-août.",
+      impact:"Pour un workflow agentique, suivre coût complet, taux d’expériences utiles et décisions humaines évitées. Le volume de tokens n’est ni une productivité ni un ROI en soi.",
+      source:"OpenAI Research",url:"https://openai.com/index/research-acceleration-view-inside-openai/",read:"12 min"
+    },
+    {
+      id:141,topics:["IA & outils","Creative strategy","CRO","Design"],tag:"CLAUDE · 5.1",kind:"Officiel",level:"Prioritaire",author:"Anthropic",platform:"Anthropic News",date:"1 septembre 2026",
+      title:"Claude Fable et Mythos 5.1 baissent le coût des agents et séparent leurs garde-fous",
+      summary:"Anthropic livre le même modèle sous Fable, disponible généralement, et Mythos, réservé aux usages cyber et sciences de la vie approuvés, avec jusqu’à 45 % d’économie annoncée sur des tâches agentiques.",
+      impact:"Comparer Fable 5.1 sur vos parcours réels avant migration, puis réserver Mythos aux équipes capables d’assumer contrôle d’accès, revue et traçabilité renforcés.",
+      source:"Anthropic",url:"https://www.anthropic.com/claude-fable-and-mythos-5-1",read:"16 min",echoes:["Canva","Shopify","Browserbase"]
+    },
+    {
+      id:142,topics:["E-commerce","IA & outils","CRO","Design"],tag:"CLAUDE · GOUVERNANCE",kind:"Officiel",level:"Prioritaire",author:"Anthropic",platform:"Anthropic News",date:"1 septembre 2026",
+      title:"Anthropic place stockage, clés et revue d’abus sous contrôle de l’entreprise",
+      summary:"Enterprise Frontier Safeguards propose stockage dans le cloud du client, clés gérées par lui et revue automatisée des abus, avec déploiement cohérent chez Anthropic, AWS, Google Cloud et Microsoft.",
+      impact:"Distinguer coût du modèle, coût du stockage et egress, résidence réelle et accès aux journaux. L’option ne remplace pas une architecture interne à privilèges minimaux.",
+      source:"Anthropic",url:"https://www.anthropic.com/news/enterprise-frontier-safeguards",read:"10 min"
+    },
+    {
+      id:143,topics:["IA & outils","Design"],tag:"CLAUDE · PREUVE",kind:"Recherche",level:"À surveiller",author:"Anthropic Research",platform:"Anthropic News",date:"4 septembre 2026",
+      title:"Claude formalise le dernier théorème de Fermat dans une preuve vérifiée par machine",
+      summary:"Anthropic publie une formalisation Lean annoncée comme complète : onze jours de travail largement autonome, 13 millions de lignes générées et 29 500 théorèmes intermédiaires contrôlés par le compilateur.",
+      impact:"La leçon utile est la vérification : confier aux agents des livrables que la machine peut valider, tout en gardant lisibilité, maintenance et revue humaine comme critères séparés.",
+      source:"Anthropic Research",url:"https://www.anthropic.com/news/formalizing-fermats-last-theorem",read:"13 min",echoes:["Kevin Buzzard · mathématicien"]
+    },
+    {
+      id:144,topics:["E-commerce","Acquisition","IA & outils","CRO","Design"],tag:"CLAUDE · COMMERCE",kind:"Média",level:"Prioritaire",author:"Arriana McLymore",platform:"Reuters",date:"2 septembre 2026",
+      title:"Anthropic lance des plans d’agents marchands avant la saison des fêtes",
+      summary:"Reuters décrit des blueprints Claude pour shopping, voyage et billetterie : conseil, constitution du panier et assistance marchand sur stock, prix ou marketing, sans achat autonome au lancement.",
+      impact:"Commencer par recommandation et panier avec consentement explicite, journaliser chaque outil appelé, puis isoler l’effet sur conversion, panier moyen, erreurs et recours au support.",
+      source:"Reuters",url:"https://www.reuters.com/business/retail-consumer/anthropic-launches-ai-agent-blueprints-retailers-ahead-holiday-shopping-season-2026-09-02/",read:"6 min"
+    },
+    {
+      id:145,topics:["Acquisition","IA & outils","Creative strategy","CRO","Design"],tag:"XAI · AGENTS",kind:"Officiel",level:"Prioritaire",author:"xAI",platform:"xAI News",date:"3 septembre 2026",
+      title:"Grok Bot donne à chaque agent un ordinateur cloud, des routines et des contrôles d’entreprise",
+      summary:"Le produit associe bots persistants, chats, prompts réutilisables, outils et artefacts. xAI offre deux semaines d’usage entreprise et documente une interface centrée sur une équipe d’agents plutôt qu’un historique de conversations.",
+      impact:"Piloter une routine non critique avec permissions minimales, preuve de progression et sortie vérifiable. L’essai gratuit ne doit pas masquer les coûts futurs ni le risque d’accès excessif.",
+      source:"xAI",url:"https://x.ai/news/grok-bot-for-enterprise",read:"10 min",echoes:["xAI · Designing Grok Bot","Cursor · Teams"]
+    },
+    {
+      id:146,topics:["E-commerce","IA & outils","CRO"],tag:"XAI · ACHATS",kind:"Officiel",level:"À tester",author:"xAI",platform:"xAI News",date:"4 septembre 2026",
+      title:"xAI transforme Grok Bot en négociateur d’achats avec validation humaine finale",
+      summary:"Haggle Bot lit dépenses, contrats, utilisation et prix du marché, sollicite des devis puis prépare une négociation. xAI revendique plus de 100 000 dollars d’économies sur un cas interne.",
+      impact:"Tester sur renouvellements à faible risque, avec limites de mandat explicites et approbation avant signature, paiement, souscription ou engagement fournisseur.",
+      source:"xAI",url:"https://x.ai/news/grok-bot-procurement",read:"8 min"
+    },
+    {
+      id:147,topics:["IA & outils","CRO"],tag:"XAI · BIOSÉCURITÉ",kind:"Recherche",level:"À surveiller",author:"xAI et LatchBio",platform:"xAI News",date:"1 septembre 2026",
+      title:"Grok 4.6 dépasse 50 % sur sûreté et utilité dans un benchmark biologique indépendant",
+      summary:"BioSecBench Refusal teste 46 tâches à danger masqué et des tâches de routine. xAI rapporte un score harmonique de 62,1 %, avec 59,2 % de refus corrects et 64,8 % de réussite utile.",
+      impact:"Évaluer séparément refus dangereux et faux refus sur vos cas sensibles. Un score agrégé ne remplace ni filtrage des outils, ni revue humaine, ni limites de domaine.",
+      source:"xAI",url:"https://x.ai/news/biosafety-at-the-frontier",read:"9 min",echoes:["LatchBio · évaluation indépendante"]
+    },
+    {
+      id:148,topics:["E-commerce","IA & outils","CRO"],tag:"MICROSOFT · INFRA",kind:"Officiel",level:"À surveiller",author:"Rani Borkar",platform:"Microsoft Blog",date:"1 septembre 2026",
+      title:"Microsoft propose de mesurer l’IA en intelligence utile par watt et par dollar",
+      summary:"Microsoft estime la pénétration mondiale des usages IA à 18 % et souligne qu’une tâche agentique peut consommer plus de 3 400 fois les tokens d’un chat typique.",
+      impact:"Ajouter rendement, latence soutenue et coût par résultat validé aux tableaux de bord. Le nombre de tokens servi valorise l’infrastructure, pas nécessairement l’entreprise utilisatrice.",
+      source:"Microsoft",url:"https://blogs.microsoft.com/blog/2026/09/01/the-yield-imperative-turning-ai-infrastructure-into-useful-intelligence/",read:"8 min"
+    },
+    {
+      id:149,topics:["Acquisition","IA & outils","Creative strategy","Formats publicitaires","CRO","Design"],tag:"RUNWAY · MCP",kind:"Officiel",level:"À tester",author:"Runway",platform:"Runway News",date:"2 septembre 2026",
+      title:"Runway Dev connecte la génération média aux agents de code via MCP",
+      summary:"Le serveur MCP hébergé laisse Claude Code, Codex ou Cursor sélectionner, configurer et déboguer les modèles Runway. Le changelog ajoute aussi la vidéo MiniMax H3 Max le 3 septembre.",
+      impact:"Encadrer la génération par un brief structuré, un budget de crédits et une validation asset. Tester le gain d’itération sans confondre sélection automatique et direction créative.",
+      source:"Runway",url:"https://runway.com/news/company-news/runway-dev-mcp",read:"7 min",echoes:["Runway Dev API Changelog · MiniMax H3 Max"]
+    },
+    {
+      id:150,topics:["IA & outils","Creative strategy","Formats publicitaires","CRO","Design"],tag:"RUNWAY · ÉQUIPE",kind:"Officiel",level:"À tester",author:"Runway",platform:"Runway News",date:"4 septembre 2026",
+      title:"Runway lance un plan Team avec crédits partagés, Brand Kits et compétences d’agents",
+      summary:"L’offre pour 2 à 9 personnes mutualise 6 900 crédits par siège et par mois, projets, références, Brand Kits, commentaires et jusqu’à 20 compétences d’agents partageables.",
+      impact:"Comparer au coût actuel par asset approuvé, pas au volume de crédits. Définir qui peut publier une compétence, modifier un Brand Kit et consommer le pool.",
+      source:"Runway",url:"https://runway.com/news/company-news/introducing-team-plan",read:"7 min"
+    },
+    {
+      id:151,topics:["Acquisition","IA & outils","Creative strategy","Formats publicitaires","CRO","Design"],tag:"ADOBE · SLACK",kind:"Officiel",level:"À tester",author:"Deepti Pradeep",platform:"Adobe Blog",date:"2 septembre 2026",
+      title:"Adobe apporte plus de 70 outils créatifs dans les conversations Slack",
+      summary:"Slackbot peut appeler Firefly, Express, Photoshop, Premiere, Acrobat ou Stock en puisant le contexte des messages, fichiers et Canvas pour créer et décliner les livrables sans quitter Slack.",
+      impact:"Tester un flux brief-vers-variantes avec dossier source verrouillé, droits clairs et validation finale. La disponibilité exige Slack Business+ ou Enterprise+.",
+      source:"Adobe",url:"https://blog.adobe.com/en/publish/2026/09/02/introducing-adobe-for-slack",read:"8 min"
+    },
+    {
+      id:152,topics:["E-commerce","Acquisition","IA & outils","Creative strategy","Formats publicitaires","CRO","Design"],tag:"CANVA · SUITE",kind:"Officiel",level:"Prioritaire",author:"Canva Team",platform:"Canva Newsroom",date:"2 septembre 2026",
+      title:"Canva regroupe plus de 100 évolutions de sa Visual Suite dans un même projet",
+      summary:"Docs, Sheets, Whiteboards, Présentations, Websites, Print et Video partagent davantage contexte, collaboration et génération : une campagne peut passer du moodboard au site sans export intermédiaire.",
+      impact:"Construire un pilote complet plutôt qu’un test d’image isolé, puis mesurer temps de passage, erreurs de transfert, cohérence de marque et besoin de retouche experte.",
+      source:"Canva",url:"https://www.canva.com/newsroom/news/visual-suite-100-updates/",read:"10 min"
+    },
+    {
+      id:153,topics:["IA & outils","Creative strategy","Formats publicitaires","Design"],tag:"FIGMA · GÉNÉRATIF",kind:"Officiel",level:"À tester",author:"Rogie King",platform:"Figma Blog",date:"1 septembre 2026",
+      title:"Figma rend ses plugins et shaders génératifs publiables, interactifs et exportables",
+      summary:"Le design agent crée désormais effets WebGPU animés ou interactifs, plugins internes ou communautaires et code récupérable ; le serveur MCP peut les modifier ou les traduire vers React.",
+      impact:"Transformer les effets gagnants en composants réutilisables, avec revue de performance et sécurité. Garder des maquettes statiques pour aligner les états avant le prototype.",
+      source:"Figma",url:"https://www.figma.com/blog/how-we-built-generative-plugins-and-shaders/",read:"14 min"
+    },
+    {
+      id:154,topics:["E-commerce","Acquisition","IA & outils","Meta & Google","CRO"],tag:"GOOGLE ADS · AI MAX",kind:"Expert",level:"Prioritaire",author:"Common Thread Collective",platform:"Coach’s Corner",date:"2 septembre 2026",
+      title:"La migration AI Max change automatiquement certains réglages Search",
+      summary:"CTC détaille la migration des campagnes éligibles depuis le 1er septembre : auto-created assets et broad match déclenchent des combinaisons différentes de matching, personnalisation de texte et expansion d’URL.",
+      impact:"Exporter les réglages avant/après, vérifier requêtes, négatifs, textes et pages finales, puis segmenter la performance. Ne pas attribuer à Google les recommandations propres à CTC.",
+      source:"Common Thread Collective",url:"https://commonthreadco.com/blogs/coachs-corner/google-ai-max-migration-live-september-1-2026-ecommerce",read:"9 min"
+    },
+    {
+      id:155,topics:["E-commerce","Acquisition","IA & outils","Formats publicitaires","Meta & Google","CRO","Design"],tag:"GOOGLE · AI MODE",kind:"Expert",level:"Prioritaire",author:"Common Thread Collective",platform:"Coach’s Corner",date:"31 août 2026",
+      title:"Les annonces Shopping entrent dans les réponses d’AI Mode sans reporting dédié",
+      summary:"CTC observe des carrousels produits intégrés aux réponses d’AI Mode, alimentés par Performance Max ou Shopping et les flux Merchant Center, mais sans ventilation de placement ni ROAS propre.",
+      impact:"Enrichir titres, attributs, images et disponibilité du flux, puis suivre des cohortes et conversions assistées. L’absence de détail impose de ne pas surinterpréter le ROAS agrégé.",
+      source:"Common Thread Collective",url:"https://commonthreadco.com/blogs/coachs-corner/google-ai-mode-now-shows-shopping-ads-inline-what-ecommerce-brands-must-do-right-now",read:"8 min"
+    },
+    {
+      id:156,topics:["Acquisition","Meta & Google","CRO"],tag:"GOOGLE · MESURE",kind:"Officiel",level:"Prioritaire",author:"Ginny Marvin et John Chen",platform:"Google Ads Blog",date:"2 septembre 2026",
+      title:"Google assemble attribution, incrémentalité et MMM au lieu de chercher une métrique unique",
+      summary:"Ads Decoded explique pourquoi les trois méthodes peuvent diverger, comment Qualified Future Conversions prend en compte les parcours longs et pourquoi l’optimisation au ROAS immédiat peut sous-investir.",
+      impact:"Attribuer à chaque outil une question : pilotage quotidien, causalité ou allocation globale. Documenter les écarts avant de modifier budget ou enchères.",
+      source:"Google Ads",url:"https://blog.google/products/ads-commerce/ads-decoded-podcast-measurement-stack/",read:"24 min"
+    },
+    {
+      id:157,topics:["Acquisition","IA & outils","Meta & Google","CRO"],tag:"META · ÉVÉNEMENTS",kind:"Expert",level:"Prioritaire",author:"Jon Loomer",platform:"Blog",date:"1 septembre 2026",
+      title:"Meta Automatic Events détecte des conversions, mais peut aussi les doubler",
+      summary:"Jon Loomer analyse une option qui identifie par IA des événements standard sur le site. Les nouveaux pixels depuis le 3 août semblent activés par défaut, contrairement aux sources existantes.",
+      impact:"Comparer Events Manager au plan de marquage, rechercher doublons et événements fantômes, puis désactiver l’automatisme si la nomenclature ou la valeur deviennent incohérentes.",
+      source:"Jon Loomer",url:"https://www.jonloomer.com/meta-automatic-events-feature/",read:"6 min"
+    },
+    {
+      id:158,topics:["E-commerce","Acquisition","Meta & Google","CRO","Design"],tag:"WHATSAPP · PAIEMENT",kind:"Officiel",level:"À surveiller",author:"Meta",platform:"Meta Newsroom",date:"3 septembre 2026",
+      title:"WhatsApp ajoute le paiement de factures auprès de 22 722 émetteurs en Inde",
+      summary:"L’intégration Bharat Connect BBPS couvre 30 catégories, plusieurs comptes, historique et échéances, avec paiement UPI, carte de débit ou crédit directement dans WhatsApp.",
+      impact:"Observer le modèle d’usage récurrent dans la messagerie : raccourci visible, rappel, confiance et reprise. Le lancement progressif reste limité à l’Inde.",
+      source:"Meta",url:"https://about.fb.com/news/2026/09/launching-bill-payments-in-india-helping-people-to-pay-everyday-household-bills-directly-on-whatsapp/",read:"5 min"
+    },
+    {
+      id:159,topics:["Acquisition","Creative strategy","Formats publicitaires","CRO","Design"],tag:"TIKTOK · COMMENTAIRES",kind:"Officiel",level:"À tester",author:"TikTok",platform:"TikTok Newsroom",date:"3 septembre 2026",
+      title:"TikTok enrichit les commentaires avec voix, sondages et carrousels photo",
+      summary:"Les créateurs peuvent répondre avec jusqu’à 60 secondes de voix, lancer des sondages à cinq choix et publier jusqu’à neuf images, tandis que les Live Photos arrivent dans les commentaires.",
+      impact:"Traiter le commentaire comme un format créatif et un espace de recherche client, avec modération, accessibilité et consentement avant toute réutilisation publicitaire.",
+      source:"TikTok",url:"https://newsroom.tiktok.com/say-more-in-the-comments",read:"5 min"
+    },
+    {
+      id:160,topics:["Acquisition","Creative strategy","Formats publicitaires","Meta & Google"],tag:"TIKTOK · SPORT",kind:"Officiel",level:"À surveiller",author:"TikTok et NFL",platform:"TikTok Newsroom",date:"2 septembre 2026",
+      title:"TikTok et la NFL renouvellent leur partenariat autour d’un hub GamePlan",
+      summary:"Le nouvel accord pluriannuel centralise scores, calendrier, contenus officiels et expériences interactives dans la recherche TikTok, avec davantage d’archives et de récits toute l’année.",
+      impact:"Pour un sponsor sportif, planifier des créations par moment de fan plutôt que par seul match, puis mesurer recherches, vues qualifiées et actions sur le hub.",
+      source:"TikTok",url:"https://newsroom.tiktok.com/tiktok-and-nfl-renew-partnership-with-multiyear-agreement-to-bring-global-fans-closer-to-football?lang=en",read:"6 min"
+    },
+    {
+      id:161,topics:["Acquisition","Creative strategy","Formats publicitaires","Design"],tag:"TIKTOK · NOSTALGIE",kind:"Officiel",level:"Inspiration",author:"TikTok",platform:"TikTok Newsroom",date:"1 septembre 2026",
+      title:"Un titre de 2011 devient la chanson mondiale de l’été TikTok 2026",
+      summary:"The One That Got Away de Katy Perry arrive en tête après 42 millions de vidéos et 55 milliards de vues, illustrant la capacité des récits personnels à réactiver un catalogue ancien.",
+      impact:"Chercher des actifs culturels dormants associés à une émotion ou un geste reproductible, puis créer plusieurs mises en scène natives avant de pousser la dépense.",
+      source:"TikTok",url:"https://newsroom.tiktok.com/tiktoks-global-and-us-song-of-the-summer-2026-katy-perrys-the-one-that-got-away?lang=en",read:"6 min"
+    },
+    {
+      id:162,topics:["E-commerce","CRO","Design"],tag:"SHOPIFY POS · PANIER",kind:"Officiel",level:"Prioritaire",author:"Shopify",platform:"Shopify Changelog",date:"3 septembre 2026",
+      title:"Shopify POS récupère en magasin le panier en ligne abandonné d’un client identifié",
+      summary:"Avec POS 11.14 et la permission dédiée, le personnel voit les produits d’un checkout abandonné éligible, peut répondre sur taille ou stock puis terminer la vente en boutique.",
+      impact:"Former les équipes à demander l’identification sans pression, limiter l’accès au panier et suivre le taux de reprise sans assimiler consultation et consentement marketing.",
+      source:"Shopify",url:"https://changelog.shopify.com/posts/permitted-store-staff-can-now-see-an-identified-customer-s-online-cart-in-pos",read:"4 min"
+    },
+    {
+      id:163,topics:["E-commerce","CRO","Design"],tag:"SHOPIFY POS · OPS",kind:"Officiel",level:"À tester",author:"Shopify",platform:"Shopify Changelog",date:"1 septembre 2026",
+      title:"Shopify POS accepte plusieurs codes-barres et expose la connectivité dès l’accueil",
+      summary:"La version 11.14 reconnaît GTIN, EAN, ASIN ou SKU associés à une même variante et ajoute un diagnostic réseau visible avant la vente, la réception ou l’inventaire.",
+      impact:"Nettoyer les associations produit avant déploiement, puis suivre erreurs de scan et ventes interrompues. La visibilité réseau aide seulement si une procédure de reprise existe.",
+      source:"Shopify",url:"https://changelog.shopify.com/posts/scan-and-search-variants-with-multiple-barcodes",read:"5 min",echoes:["Shopify POS · Connectivity status"]
+    },
+    {
+      id:164,topics:["E-commerce","Acquisition","Creative strategy","Formats publicitaires","Meta & Google","CRO","Design"],tag:"SOCIAL MERCHANDISING",kind:"Média",level:"Prioritaire",author:"Zak Stambor",platform:"EMARKETER",date:"4 septembre 2026",
+      title:"Five Below relie sa veille sociale à cinq trimestres de croissance comparable à deux chiffres",
+      summary:"Le distributeur dit avoir réduit les médias traditionnels et rapproché tendances sociales, assortiment et communication pour mieux servir Gen Alpha, Gen Z et leurs parents.",
+      impact:"Brancher social listening, achats et studio créatif dans une même cadence, puis mesurer vitesse de mise en rayon et marge par tendance plutôt que seul engagement.",
+      source:"EMARKETER",url:"https://www.emarketer.com/content/five-below-social-media-merchandising-sales-growth",read:"6 min",echoes:["Retail Dive · analyse opérationnelle"]
+    },
+    {
+      id:165,topics:["E-commerce","Acquisition","Creative strategy","CRO","Design"],tag:"LULULEMON · MARQUE",kind:"Média",level:"Prioritaire",author:"Anna Hensel",platform:"Modern Retail",date:"3 septembre 2026",
+      title:"Lululemon affronte une baisse de 9 % des ventes comparables et une crise d’identité",
+      summary:"Au deuxième trimestre, le chiffre d’affaires recule de 4 %, les comparables de 9 % et les leggings de 20 %. Heidi O’Neill doit prendre la direction le 8 septembre.",
+      impact:"Séparer diagnostic produit, désirabilité de marque, prix et distribution avant de multiplier les promotions. Une nouvelle campagne ne corrige pas seule une proposition de valeur brouillée.",
+      source:"Modern Retail",url:"https://www.modernretail.co/operations/lululemons-identity-crisis-continues-with-comp-sales-down-9-as-it-prepares-to-welcome-new-ceo/",read:"7 min"
+    },
+    {
+      id:166,topics:["E-commerce","Acquisition","CRO"],tag:"CONSOMMATION · VALEUR",kind:"Média",level:"Prioritaire",author:"Zak Stambor",platform:"EMARKETER",date:"3 septembre 2026",
+      title:"Les prix montent de 3 % tandis que les transactions des petits commerces reculent de 1,8 %",
+      summary:"Les données Fiserv sur environ 2 000 petites entreprises américaines signalent une hausse nominale des ventes de 1,3 %, tirée par le panier plutôt que le volume.",
+      impact:"Suivre unités, fréquence et marge séparément du chiffre d’affaires. Tester bundles, fidélité et avantages ciblés avant une remise généralisée qui détériore la marge.",
+      source:"EMARKETER",url:"https://www.emarketer.com/content/consumer-spending-slowdown-value-retail-2026",read:"6 min"
+    },
+    {
+      id:167,topics:["E-commerce","Acquisition","Creative strategy","CRO"],tag:"BACK-TO-SCHOOL",kind:"Média",level:"À tester",author:"Peter Clark",platform:"EMARKETER",date:"3 septembre 2026",
+      title:"Les parents retardent les achats de rentrée et surveillent davantage les prix",
+      summary:"Seuls 15 % prévoyaient d’acheter début juillet, contre 28 % en 2025, tandis que 72 % des adultes américains disent suivre les prix avant achat ; le pic se déplace vers début août.",
+      impact:"Décaler budget et messages vers les fenêtres réelles, séparer préparation et conversion, puis automatiser seulement les baisses de prix crédibles et les ruptures proches.",
+      source:"EMARKETER",url:"https://www.emarketer.com/content/parents-ditched-early-july-shopping-rush-this-year",read:"5 min"
+    },
+    {
+      id:168,topics:["E-commerce","Acquisition","Creative strategy","Formats publicitaires","Meta & Google","CRO"],tag:"RETAIL MEDIA · SOCIAL",kind:"Média",level:"Prioritaire",author:"Max Willens et Sarah Marzano",platform:"EMARKETER",date:"3 septembre 2026",
+      title:"Le retail media cherche à capter le social, mais bute sur la mesure inter-réseaux",
+      summary:"EMARKETER estime les dépenses sociales via retail media networks à 1,30 milliard de dollars en 2026 ; créateurs et données commerce élargissent l’offre, sans standard de mesure partagé.",
+      impact:"Exiger plan de test incrémental, définition d’audience et déduplication avec les plateformes sociales. Un ciblage marchand ne prouve pas une vente additionnelle.",
+      source:"EMARKETER",url:"https://www.emarketer.com/content/retail-medias-untapped-social-media-opportunity",read:"8 min"
+    },
+    {
+      id:169,topics:["E-commerce","Acquisition","Creative strategy","Formats publicitaires","Meta & Google","CRO"],tag:"RATTRAPAGE · RETAIL MEDIA",kind:"Média",level:"À tester",author:"Melissa Daniels",platform:"Modern Retail",date:"2 septembre 2026 · Rattrapage du 27 août",
+      title:"Ace relie influenceurs, DoorDash, météo et incrémentalité dans RedVest Media",
+      summary:"Modern Retail analyse l’annonce Ace du 27 août : mesure incrémentale offsite, amplification sociale, influenceurs, partenariat DoorDash et activation programmatique selon la météo.",
+      impact:"Tester un seul déclencheur local avec zone, fenêtre et holdout définis. Multiplier les partenaires sans identité ni mesure commune rend l’incrémentalité illisible.",
+      source:"Modern Retail",url:"https://www.modernretail.co/marketing/ace-hardware-adds-influencer-doordash-and-weather-features-as-it-builds-out-a-retail-media-strategy/",read:"7 min",echoes:["Ace Hardware · annonce officielle du 27 août"]
+    },
+    {
+      id:170,topics:["E-commerce","Acquisition","Creative strategy","CRO","Design"],tag:"UX · CONTENU LONG",kind:"Expert",level:"À tester",author:"Taylor Dykes",platform:"Nielsen Norman Group",date:"31 août 2026",
+      title:"Le contenu long reste utile lorsque la décision est complexe, risquée ou fondée sur la confiance",
+      summary:"NN/g rappelle que SEO et réponses IA n’annulent pas le besoin d’explication approfondie : titres, résumés, listes et appels visuels doivent rendre le texte scannable sans le vider.",
+      impact:"Conserver une page longue pour les objections à forte valeur, instrumenter la lecture par section et tester une version structurée plutôt qu’une suppression arbitraire du contenu.",
+      source:"Nielsen Norman Group",url:"https://www.nngroup.com/videos/we-still-need-long-form-copy/",read:"7 min"
+    }
+  ]
+},{
   id:"2026-08-31", label:"31 août 2026", period:"24–30 août",
   headline:"Google rapproche publicité, vidéo IA et réservation, pendant que le commerce transforme agents, créateurs et UX en leviers mesurables.",
   items:[
